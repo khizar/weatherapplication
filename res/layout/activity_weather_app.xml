@@ -1,0 +1,153 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/container_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_with_seperator" >
+
+                <TextView
+                    android:id="@+id/first_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="bottom"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fefefa"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/first_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:textColor="#f5c71a"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/firstImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/weather_icon"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_two"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/container_one"
+                android:background="@drawable/bg_with_seperator" >
+
+                <TextView
+                    android:id="@+id/second_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="bottom"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fefefa"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:textColor="#f5c71a"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/weather_icon"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_three"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/container_two"
+                android:background="@drawable/bg_with_seperator" >
+
+                <TextView
+                    android:id="@+id/third_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="bottom"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fefefa"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:textColor="#f5c71a"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/thirdImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/weather_icon"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/updateTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/container_three"
+                android:textColor="#696969"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/container_three"
+                android:text="@string/temp_units"
+                android:textColor="#696969"
+                android:padding="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

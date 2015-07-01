@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeatherApplicationTest</string>
+    
+    <string name="weather_icon">Weather Icon</string>
+    
+    <string name="temp_units">Units: Celsius</string>
+
+    <string name="error_api_call">API call failed due to an unhandled error.</string>
+    <string name="error_request_failed">API Request Failed.</string>
+    <string name="error_prop_file">Failed to open property file.</string>
+</resources>
