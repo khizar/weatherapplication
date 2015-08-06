@@ -31,7 +31,7 @@ import com.koushikdutta.ion.Ion;
  * @author Khizar
  *
  */
-public class WeatherApp extends ActionBarActivity implements OnRefreshListener {
+public class WeatherAppActivity extends ActionBarActivity implements OnRefreshListener {
     
     private final static String PROPERTIES_FILE_NAME = "WeatherTest.properties";
     
