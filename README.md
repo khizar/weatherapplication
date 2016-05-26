@@ -1,0 +1,1 @@
+Test application that shows the weather for Berlin, Paris and Los Angeles using the OpenWeatherMap APIs. Also uses the swipe to refresh, which can be used to update the data at anytime. Lets play with this now in the free time.
